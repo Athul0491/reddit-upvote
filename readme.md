@@ -61,19 +61,6 @@ We use a curated 23 GB subset of the "Reddit Comments/Submissions (2005–2024)"
 4. Run Spark jobs via `spark-submit` or notebooks
 5. For Sklearn, sample data using `.sample(fraction=0.1)` from Spark to local node
 
-# 📂 Project Structure
-
-```
-redditengage/
-├── spark_pipeline.py          # End-to-end Spark MLlib pipeline (tokenization, TF-IDF, model training)
-├── sgd_from_scratch.py        # Custom logistic regression using SGD and RDDs  
-├── sklearn_diagnostics.ipynb  # SHAP analysis, error histograms, feature importance using Scikit-learn
-├── data_preprocessing.py      # Data cleaning and feature engineering steps
-├── dataproc_setup.sh          # CLI script to set up GCP bucket and Dataproc cluster
-├── requirements.txt           # Python dependencies for local sklearn diagnostics
-├── data/                      # Placeholder for .json dataset (stored in GCS)
-└── plots/                     # Output visualizations (bar plots, ROC, SHAP)
-```
 
 ## 🤝 Contributors
 
